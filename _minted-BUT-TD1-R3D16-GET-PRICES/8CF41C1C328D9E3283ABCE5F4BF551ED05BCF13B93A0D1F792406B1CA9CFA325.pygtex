@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+jq\PYG{+w}{ }\PYGZhy{}r\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}.\PYGZsq{}}\PYG{+w}{ }medium.json
+jq\PYG{+w}{ }\PYGZhy{}r\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}.\PYGZsq{}}\PYG{+w}{ }tiny.json
+\end{Verbatim}

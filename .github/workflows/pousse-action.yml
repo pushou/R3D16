@@ -1,0 +1,27 @@
+name: Push File
+
+on: push
+
+jobs:
+  copy-file:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: push R304 TD1
+      uses: pushou/copy_file_to_another_repo_action@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      with:
+        source_file: 'BUT-TD1-R3D16-GET-PRICES.pdf'
+        destination_repo: 'pushou/pushou_public_pdf'
+        destination_folder: 'BUT/R3D16'
+        user_email: 'pushou@nowhere.fr'
+        user_name: 'pushou'
+        commit_message: 'pdf build TD1 aws prices '  
+
+
+
+
+

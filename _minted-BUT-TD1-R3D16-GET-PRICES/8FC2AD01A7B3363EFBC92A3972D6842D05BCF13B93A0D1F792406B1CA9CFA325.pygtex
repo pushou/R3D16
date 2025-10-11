@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+curl\PYG{+w}{ }\PYGZhy{}H\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}accept: json\PYGZsq{}}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}http://localhost:6001?region=us\PYGZhy{}east\PYGZhy{}1\PYGZam{}filter=t1,t2\PYGZam{}sort=vCPUs\PYGZsq{}}\PYG{p}{|}jq\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}.\PYGZsq{}}\PYG{+w}{ }\PYGZgt{}\PYG{+w}{ }tiny.json
+curl\PYG{+w}{ }\PYGZhy{}H\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}accept: json\PYGZsq{}}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}http://localhost:6001?region=us\PYGZhy{}east\PYGZhy{}1\PYGZam{}filter=m5,m6\PYGZam{}sort=vCPUs\PYGZsq{}}\PYG{p}{|}jq\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}.\PYGZsq{}}\PYGZgt{}\PYG{+w}{ }medium.json
+jq\PYG{+w}{ }\PYGZhy{}r\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}.Prices[]|select(.InstanceType==\PYGZdq{}t1.micro\PYGZdq{})|.InstanceType,.MonthlyPrice\PYGZsq{}}\PYG{+w}{ }tiny.json
+t1.micro
+\PYG{l+m}{14}.60
+\PYGZgt{}\PYG{+w}{ }jq\PYG{+w}{ }\PYGZhy{}r\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}.Prices[]|select(.InstanceType==\PYGZdq{}m6a.48xlarge\PYGZdq{})|.InstanceType,.MonthlyPrice\PYGZsq{}}\PYG{+w}{ }medium.json
+m6a.48xlarge
+\PYG{l+m}{6054}.911999999999
+nu
+\PYG{c+c1}{\PYGZsh{} nushell}
+open\PYG{+w}{ }tiny.json\PYG{p}{|}flatten\PYG{p}{|}flatten\PYG{p}{|}sort\PYGZhy{}by\PYG{+w}{ }VCPUS
+open\PYG{+w}{ }tiny.json\PYG{p}{|}flatten\PYG{p}{|}flatten\PYG{p}{|}sort\PYGZhy{}by\PYG{+w}{ }Memory
+\PYG{+w}{            }\PYG{p}{|}\PYG{+w}{ }insert\PYG{+w}{ }MemStr\PYG{+w}{ }\PYG{o}{\PYGZob{}}\PYG{n+nv}{\PYGZdl{}in}.Memory\PYG{+w}{ }\PYG{p}{|}split\PYG{+w}{ }column\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{} \PYGZsq{}}\PYG{o}{\PYGZcb{}}
+\PYG{+w}{            }\PYG{p}{|}\PYG{+w}{ }flatten\PYG{+w}{ }\PYGZhy{}\PYGZhy{}all\PYG{p}{|}flatten\PYG{+w}{ }\PYGZhy{}\PYGZhy{}all
+\PYG{+w}{            }\PYG{p}{|}\PYG{+w}{ }reject\PYG{+w}{ }column2\PYG{+w}{ }Memory
+\PYG{+w}{            }\PYG{p}{|}\PYG{+w}{ }insert\PYG{+w}{ }MemNumGiB\PYG{+w}{ }\PYG{o}{\PYGZob{}}\PYG{n+nv}{\PYGZdl{}in}.column1\PYG{p}{|}into\PYG{+w}{ }decimal\PYG{o}{\PYGZcb{}}
+\PYG{+w}{            }\PYG{p}{|}\PYG{+w}{ }reject\PYG{+w}{ }column1
+\PYG{+w}{            }\PYG{p}{|}\PYG{+w}{ }sort\PYGZhy{}by\PYG{+w}{ }MemNumGiB
+\PYG{+w}{            }\PYG{p}{|}\PYG{+w}{ }move\PYG{+w}{ }MemNumGiB\PYG{+w}{ }\PYGZhy{}\PYGZhy{}before\PYG{+w}{ }Storage
+
+\end{Verbatim}
