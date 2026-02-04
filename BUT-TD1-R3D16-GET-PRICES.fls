@@ -191,6 +191,8 @@ OUTPUT BUT-TD1-R3D16-GET-PRICES.pdf
 INPUT ./BUT-TD1-R3D16-GET-PRICES.out
 INPUT ./BUT-TD1-R3D16-GET-PRICES.out
 OUTPUT BUT-TD1-R3D16-GET-PRICES.out
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1728.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1200.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -233,8 +235,6 @@ INPUT ./BUT-TD1-R3D16-GET-PRICES.pyg
 INPUT ./_minted-BUT-TD1-R3D16-GET-PRICES/8CF41C1C328D9E3283ABCE5F4BF551ED05BCF13B93A0D1F792406B1CA9CFA325.pygtex
 INPUT ./_minted-BUT-TD1-R3D16-GET-PRICES/8CF41C1C328D9E3283ABCE5F4BF551ED05BCF13B93A0D1F792406B1CA9CFA325.pygtex
 INPUT _minted-BUT-TD1-R3D16-GET-PRICES/8CF41C1C328D9E3283ABCE5F4BF551ED05BCF13B93A0D1F792406B1CA9CFA325.pygtex
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT BUT-TD1-R3D16-GET-PRICES.aux
 INPUT ./BUT-TD1-R3D16-GET-PRICES.out

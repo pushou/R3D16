@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.1.16)  10 OCT 2025 15:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.1.16)  4 FEB 2026 16:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -524,6 +524,9 @@ Package hyperref Info: Link coloring OFF on input line 16.
 \@outlinefile=\write5
 \openout5 = `BUT-TD1-R3D16-GET-PRICES.out'.
 
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 17.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -551,9 +554,7 @@ File: ts1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ))
 \openout3 = `BUT-TD1-R3D16-GET-PRICES.pyg'.
 
- (./_minted-BUT-TD1-R3D16-GET-PRICES/8CF41C1C328D9E3283ABCE5F4BF551ED05BCF13B93A0D1F792406B1CA9CFA325.pygtex) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+ (./_minted-BUT-TD1-R3D16-GET-PRICES/8CF41C1C328D9E3283ABCE5F4BF551ED05BCF13B93A0D1F792406B1CA9CFA325.pygtex) [2{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 This exam contains 11 questions with 0 parts, 0 subparts, and 0 subsubparts.
 (./BUT-TD1-R3D16-GET-PRICES.aux)
  ***********
@@ -570,18 +571,18 @@ runsystem(rm BUT-TD1-R3D16-GET-PRICES.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 17187 strings out of 474222
- 288626 string characters out of 5748733
- 1936975 words of memory out of 5000000
- 39197 multiletter control sequences out of 15000+600000
+ 17192 strings out of 474222
+ 288668 string characters out of 5748733
+ 1932975 words of memory out of 5000000
+ 39201 multiletter control sequences out of 15000+600000
  569184 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,7n,84p,608b,776s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 82i,10n,84p,608b,776s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on BUT-TD1-R3D16-GET-PRICES.pdf (1 page, 123603 bytes).
+Output written on BUT-TD1-R3D16-GET-PRICES.pdf (2 pages, 123800 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
